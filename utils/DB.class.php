@@ -21,7 +21,7 @@ class DB
 				$db      = SystemConfig::getData("db");
 				$schemas = SystemConfig::getData("schemas");
 
-				self::$con = new PDO("pgsql:dbname={$db} host={$host} port={$port}", $user, "");
+				self::$con = new PDO("pgsql:dbname={$db} host={$host} port={$port}", $user, $pass);
 				self::$con->query("SET search_path TO " . implode(", ", $schemas));
 				self::$con->beginTransaction();
 

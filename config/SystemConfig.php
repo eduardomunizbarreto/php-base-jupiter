@@ -2,9 +2,9 @@
 
 	// conexão com o banco de dados
 	$SystemConfig["host"]    = "localhost";
-	$SystemConfig["port"]    = "3306";
+	$SystemConfig["port"]    = "5432";
 	$SystemConfig["user"]    = "postgres";
-	$SystemConfig["pass"]    = "";
-	$SystemConfig["db"]      = "viaradio";
-	$SystemConfig["schemas"] = ["public", "_imperatriz"];
+	$SystemConfig["pass"]    = "admin";
+	$SystemConfig["db"]      = "FreeSwitch";
+	$SystemConfig["schemas"] = ["public"];
 

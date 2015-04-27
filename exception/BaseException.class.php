@@ -1,6 +1,6 @@
 <?php
 
-class NFePHPException extends Exception
+class BaseException extends Exception
 {
 
 	public function errorMessage()
